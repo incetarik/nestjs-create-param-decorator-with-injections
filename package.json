@@ -1,0 +1,43 @@
+{
+  "name": "nestjs-create-param-decorator-with-injections",
+  "version": "0.1.0",
+  "description": "A function that extends `createParamDecorator` function of `nestjs` by receiving an object of injections that will be provided to the handler function of the decorator.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/incetarik/nestjs-create-param-decorator-with-injections.git"
+  },
+  "keywords": [
+    "nestjs",
+    "createParamDecorator",
+    "service",
+    "injection"
+  ],
+  "author": "Tarık İnce <incetarik@hotmail.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/incetarik/nestjs-create-param-decorator-with-injections/issues"
+  },
+  "homepage": "https://github.com/incetarik/nestjs-create-param-decorator-with-injections#readme",
+  "dependencies": {
+    "@nestjs/graphql": "^10.0.18",
+    "graphql": "^16.5.0",
+    "reflect-metadata": "^0.1.13",
+    "@nestjs/core": "^9.0.1",
+    "rxjs": "^7.5.5",
+    "@nestjs/common": "^9.0.1"
+  },
+  "peerDependencies": {
+    "@nestjs/graphql": ">= 10.0",
+    "@nestjs/core": ">= 8.0"
+  },
+  "devDependencies": {
+    "typescript": "4.7.4",
+    "release-it": "*"
+  }
+}
