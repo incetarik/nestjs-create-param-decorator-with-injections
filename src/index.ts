@@ -147,5 +147,8 @@ export function createParamDecoratorWithInjections<
   Reflect.defineMetadata('design:paramtypes', types, HiddenProxy)
   Injectable()(HiddenProxy)
 
-  return createParamDecorator((data, ctx) => [ fn, data, ctx ], enhancers)
+  const func = createParamDecorator((data, ctx) => [ fn, data, ctx ], enhancers)
+  return function _createParamDecoratorWithInjections(...dataOrPipes: any[]) {
+    return func(...dataOrPipes, HiddenProxy)
+  }
 }
