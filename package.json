@@ -1,6 +1,6 @@
 {
   "name": "nestjs-create-param-decorator-with-injections",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A function that extends `createParamDecorator` function of `nestjs` by receiving an object of injections that will be provided to the handler function of the decorator.",
   "main": "dist/index.js",
   "scripts": {
